@@ -1,3 +1,8 @@
+'''
+Author: Christian Rodriguez
+Lab 6 COP3502C
+'''
+
 def printMenu():
     print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit\n")
 
