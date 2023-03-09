@@ -19,6 +19,16 @@ def encode():
     print("Your password has been encoded and stored!")
     return encoded_password
 
+def decode(encoded_password):
+    og_password = ''
+    for ch in encoded_password:
+        if int(ch) - 3 >= 0:
+            num = int(ch) - 3
+        else:
+            num = int(ch) - 3 + 10
+        og_password += str(num)
+    return og_password
+
 
 def main():
     printMenu()
@@ -29,7 +39,8 @@ def main():
             password = encode()
             printMenu()
         elif option == "2":
-            pass
+            og_password = decode(password)
+            print(f'The encoded password is {password}, and the original password is {og_password}')
             printMenu()
 
 
