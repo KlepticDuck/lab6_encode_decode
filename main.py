@@ -22,8 +22,10 @@ def main():
         option = input("Please enter an option: ")
         if option == "1":
             password = encode()
+            printMenu()
         elif option == "2":
             pass
+            printMenu()
 
 
 if __name__ == '__main__':
